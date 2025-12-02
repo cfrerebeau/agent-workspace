@@ -1,7 +1,10 @@
 FROM node:20
 
-# Install basic development tools
-RUN apt update && apt install -y less man-db sudo
+# Install basic development tools and Python
+RUN apt update && apt install -y less man-db sudo python3 python3-pip python3-venv
+
+# Create symlinks for python commands
+RUN ln -sf /usr/bin/python3 /usr/bin/python
 
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
