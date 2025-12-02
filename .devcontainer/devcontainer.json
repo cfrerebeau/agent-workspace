@@ -8,6 +8,8 @@
 "features": {
 	"ghcr.io/devcontainers-extra/features/claude-code:1": {}
 },
+// Required for claude document skills
+"postCreateCommand": "pip install --break-system-packages pandas openpyxl pypdf pdfplumber reportlab pytesseract pdf2image pypdfium2 pillow imageio numpy defusedxml 'markitdown[pptx]' anthropic mcp playwright",
 "customizations": {
 	"vscode": {
 		"extensions": [

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(document-skills:xlsx)",
+      "mcp__ide__executeCode",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(apt-get update:*)",
+      "Bash(apt-get install:*)",
+      "Bash(sudo apt-get update:*)",
+      "Bash(sudo apt-get install:*)",
+      "Skill(xlsx)",
+      "Bash(for:*)",
+      "Bash(do echo '=== $(basename $skill) ===' if [ -f $skill/SKILL.md ])",
+      "Bash(then grep -i -E \"(pip|install|package|require|import|dependency)\" $skill/SKILL.md)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
